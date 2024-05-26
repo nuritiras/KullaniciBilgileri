@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "166449602789",
+    "project_id": "user-account-50061",
+    "storage_bucket": "user-account-50061.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166449602789:android:c8f83569dc006336b7f40c",
+        "android_client_info": {
+          "package_name": "tr.com.nuritiras.kullanicibilgileri"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLbFn6vA6JSldtfcEtFTGH--KlBZLsxtA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

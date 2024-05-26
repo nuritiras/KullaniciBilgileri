@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewBilgi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Bilgi Ekranı"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewUserId"
+        app:layout_constraintStart_toStartOf="@+id/textViewUserId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewUserId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:text="Kullanıcı ID:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewUserName"
+        app:layout_constraintStart_toStartOf="@+id/textViewUserName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBilgi" />
+
+    <TextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Kullanıcı İsmi:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewUserEmail"
+        app:layout_constraintStart_toStartOf="@+id/textViewUserEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserId" />
+
+    <TextView
+        android:id="@+id/textViewUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Kullanıcı E-Posta:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewUserPassword"
+        app:layout_constraintStart_toStartOf="@+id/textViewUserPassword"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserName" />
+
+    <TextView
+        android:id="@+id/textViewUserPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Kullanıcı Parola:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCikis"
+        app:layout_constraintStart_toStartOf="@+id/buttonCikis"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserEmail" />
+
+    <Button
+        android:id="@+id/buttonGirisGit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:onClick="onClickGirisEkrani"
+        android:text="Giriş ekranına Git"
+        app:layout_constraintBottom_toTopOf="@+id/buttonKayitGit"
+        app:layout_constraintEnd_toEndOf="@+id/buttonKayitGit"
+        app:layout_constraintStart_toStartOf="@+id/buttonKayitGit" />
+
+    <Button
+        android:id="@+id/buttonKayitGit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="162dp"
+        android:onClick="onClickKayitEkrani"
+        android:text="Kayit Ekranına Git"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCikis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:onClick="onClickSignOut"
+        android:text="Çıkış Yap"
+        app:layout_constraintEnd_toEndOf="@+id/buttonGirisGit"
+        app:layout_constraintStart_toStartOf="@+id/buttonGirisGit"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
